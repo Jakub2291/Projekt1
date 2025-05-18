@@ -151,5 +151,48 @@ h6{
     color: #333;
 }
 
+@media (max-width: 768px) {
+
+  /* header: menu pod ikoną „hamburgera” (prosto, bez JS) */
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #333;
+    padding: 0.5rem 0;
+  }
+
+  .nav-btn,
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+
+  /* baner – logo zwężone, padding mniejszy */
+  .baner { padding: 1rem; }
+  .logo  { height: 50px; }
+
+  /* siatki → jedna kolumna */
+  .card-container,
+  .feature-grid,
+  .guide-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* galerie – zmniejsz zdjęcia, zaokrąglenie */
+  .gallery-thumb {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  /* CTA – przyciski pod sobą */
+  .cta-buttons,
+  .cta a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+}
+
 
 
